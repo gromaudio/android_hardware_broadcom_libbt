@@ -213,7 +213,7 @@ static int op(bt_vendor_opcode_t opcode, void *param)
                 hw_lpm_set_wake_state(wake_assert);
             }
             break;
-
+/*
         case BT_VND_OP_EPILOG:
             {
 #if (HW_END_WITH_HCI_RESET == FALSE)
@@ -226,6 +226,7 @@ static int op(bt_vendor_opcode_t opcode, void *param)
 #endif
             }
             break;
+*/
     }
 
     return retval;

@@ -1407,7 +1407,7 @@ void hw_epilog_cback(void *p_mem)
 
         /* Once epilog process is done, must call epilog_cb callback
            to notify caller */
-        bt_vendor_cbacks->epilog_cb(BT_VND_OP_RESULT_SUCCESS);
+//        bt_vendor_cbacks->epilog_cb(BT_VND_OP_RESULT_SUCCESS);
     }
 }
 
@@ -1454,7 +1454,7 @@ void hw_epilog_process(void)
         if (bt_vendor_cbacks)
         {
             ALOGE("vendor lib epilog process aborted [no buffer]");
-            bt_vendor_cbacks->epilog_cb(BT_VND_OP_RESULT_FAIL);
+//            bt_vendor_cbacks->epilog_cb(BT_VND_OP_RESULT_FAIL);
         }
     }
 }
